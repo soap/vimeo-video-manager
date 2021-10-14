@@ -1,22 +1,23 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "soap/vimeo-video-manager",
+    "description": "Laravel package to manage video on Vimeo site",
     "keywords": [
-        ":vendor_name",
+        "soap",
         "laravel",
-        ":package_slug"
+        "vimeo",
+        "video manager"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/soap/vimeo-video-manager",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Prasit Gebsaap",
+            "email": "prasit.gebsaap@gmail.com",
             "role": "Developer"
         }
     ],
     "require": {
-        "php": "^8.0",
+        "php": "^7.4|^8.0",
         "spatie/laravel-package-tools": "^1.4.3",
         "illuminate/contracts": "^8.37"
     },
@@ -30,13 +31,13 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories"
+            "Soap\\VimdeoVideoManager\\": "src",
+            "Soap\\VimdeoVideoManager\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests"
+            "Soap\\VimdeoVideoManager\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -49,10 +50,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "Soap\\VimdeoVideoManager\\VimdeoVideoManagerServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\SkeletonFacade"
+                "Skeleton": "Soap\\VimdeoVideoManager\\VimdeoVideoManagerFacade"
             }
         }
     },
